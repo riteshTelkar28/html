@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-in</title>
+    </head>
+    <body>
+        <table bgcolor="whitesmoke" width="100%">
+            <tr>
+                <td width="20%">
+                    <img src="/Images/glogo.png" height="100px" width="100px" alt="">
+                </td>
+                <td width="20%">
+                    <a href="#"><big><a href=""><font color="red">Home</font></a></big>
+                </td>
+                <td width="25%">
+                    <input type="text" placeholder="Search">
+                </td>
+                <td width="23%">
+                    <big><a href="address.html" ><font color="green">SELECT LOCATION</font></a></big>
+                </td>
+                <td width="23%">
+                    <a href="register.html" color="yellow"><big><font color="green">SIGN-IN/SIGN-UP</font></big></a>
+                </td>
+            </tr>
+        </table>
+        <font color="white" >
+            <table bgcolor="whitesmoke" width="100%">
+                <tr bgcolor="black">
+                    <td align="center" width="15%"><font color="white"><big>Select By Category</big></font></td>
+                    <td align="center" width="23%"><big><a href=""><font color="white">Fruits & vegetables</font></a></big></td>
+                    <td align="center" width="23%"><big><a href=""><font color="white">Foodgrains,Oil and Masala</font></a></big></td>
+                    <td align="center" width="23%"><big><font color="white">Eggs,Meat and Fish</font></big></td>
+                    <td align="center" width="23%"><big><font color="white">Bakery,cakes and diary</font></big></td>
+                </tr>
+            </table>
+        </font>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <fieldset><!--fieldset gives fieldset around the content-->
+            <legend align="center" ><h1>Enter Details</h1></legend>
+        <form action="Welcome.html">
+            <table align="center" bgcolor="skyblue">
+                <tr>
+                    <td>
+                        <label for="name">Enter name</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="enter name" required id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Enter mail</label>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="enter mail" required id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Enter password</label>
+                    </td>
+                    <td>
+                        <input type="password" placeholder="enter password" required id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="contact">Enter Contact Number</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="enter contact" maxlength="10" id="contact">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Enter Address</label>
+                    </td>
+                    <td>
+                        <textarea name="" id="address" placeholder="enter address" cols="30" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">choose gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="male" id="male">
+                        <label for="male">male</label>
+                        <input type="radio" name="gender" value="female" id="female">
+                        <label for="female">female</label>
+                    </td><!--here name="gender" is used to group the gender,so that we can select one at a time-->
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="submit" value="submit">
+                    </td>
+                    <td>
+                        <input type="reset" value="reset">
+                    </td>
+                </tr>
+            </table>
+            <center> <h5>already have an account? <a href="register.html">sign-up here</a></h5>
+            </center>
+        </form>
+        </fieldset>
+    </body>
+</html>

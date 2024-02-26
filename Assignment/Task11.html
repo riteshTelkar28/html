@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-11</title>
+</head>
+<body bgcolor="grey">
+    <table border="1" cellspacing="0" align="center">
+        <caption>
+            Task - 11
+        </caption>
+        <colgroup><col span="1" bgcolor="green">
+            <col span="5" bgcolor="orange">
+        </colgroup>
+        <tr>
+            <td>S.No</td>
+            <td>Product Category</td>
+            <td>Product Name</td>
+            <td>Price(per piece)</td>
+            <td>Quantity</td>
+            <td>Amount</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                <select id="prCategory">
+                    <option selected value="">Select</option>
+                    <option value="grocery">Grocery</option>
+                    <option value="electronic">Electronic</option>
+                    <option value="medical">Medical</option>
+                    <option value="garments">Garments</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" placeholder="enter product name">
+            </td>
+            <td>
+                <input type="number" placeholder="set price (per piece)" step="100">
+            </td>
+            <td>
+                <input type="number" placeholder="set Quantity" min="0">
+            </td>
+            <td>
+                <input type="text" placeholder="enter Amount">
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>
+                <select id="prCategory">
+                    <option selected value="">Select</option>
+                    <option value="grocery">Grocery</option>
+                    <option value="electronic">Electronic</option>
+                    <option value="medical">Medical</option>
+                    <option value="garments">Garments</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" placeholder="enter product name">
+            </td>
+            <td>
+                <input type="number" placeholder="set price (per piece)" step="50" min="45">
+            </td>
+            <td>
+                <input type="number" placeholder="set Quantity" min="0">
+            </td>
+            <td>
+                <input type="text" placeholder="enter Amount">
+            </td>
+        </tr>
+        <tr>
+            <td>GST</td>
+            <td colspan="4">
+                <input type="number" placeholder="set GST" step="0.1" min="0">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">Total</td>
+            <td>
+                <label >rs.</label>
+                <input type="text" maxlength="10000">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

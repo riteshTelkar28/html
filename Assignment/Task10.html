@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-10</title>
+</head>
+<body>
+    <form action="productdetail.html" target="_blank">
+        <fieldset>
+            <table align="center">
+                <caption><h2>Add Product Form</h2></caption>
+                <tr>
+                    <td>
+                        <label for="prName">Product Name</label>
+                    </td>
+                    <td>
+                        <input required type="text" placeholder="enter product name" id="prName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prQuantity">Product Quantity</label>
+                    </td>
+                    <td>
+                        <input required type="number" placeholder="enter Quantity" id="prQuantity">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prPrice">Product Name(per peice)</label>
+                    </td>
+                    <td>
+                        <input required type="number" step="100" min="100" placeholder="set price of product" id="prname"> 
+                        <!-- step="100" increases by 100 -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="modeOfPayment">Mode of Payment</label>
+                    </td>
+                    <td>
+                        <select name="modeOfPayment" id="modeOfPayment">
+                            <option value="upi">UPI</option>
+                            <option selected value="netBanking">Net Banking</option>
+                            <option value="cod">COD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prType">Type</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="prType" id="import">
+                        <label for="import">import</label>
+                        <input type="radio" name="prType" id="export">
+                        <label for="prType">export</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="prWeight">Weight</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="prWeight" id="l50">
+                        <label for="l50"> <=50 kg </label>
+                        <input type="checkbox" name="prWeight" id="g50">
+                        <label for="g50"> >50 kg </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Add Product"></td>
+                </tr>
+            </table>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
